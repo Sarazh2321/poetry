@@ -75,7 +75,7 @@ const Poet = ({ match }) => {
             </div>
 
             <Poems poems={(poems || [])} />
-
+            <br />
         </div>
     );
 };

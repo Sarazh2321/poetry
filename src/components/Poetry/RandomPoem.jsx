@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { getFortune } from './../services/fortuneService';
+import { getRandomPoem } from '../../services/poemService';
 
-const Fortune = (props) => {
+const RandomPoem = (props) => {
 
     const [fortuneData, setFortuneData] = useState({});
 
     useEffect(() => {
-        getFortune().then(data => {
+        getRandomPoem().then(data => {
             setFortuneData(data.data);
         }).catch(err => console.log(err));
     }, [])
 
-    const { title, plainText, htmlText, recitations, verses } = fortuneData;
-    // console.log(verses);
-
+    const { fullTitle, htmlText, verses } = (fortuneData || {});
 
     return (
         <div>
             <div className="landingpage">
                 <div className="fortunetext" >
-                    <h3>{title}</h3>
+                    <h3>{fullTitle}</h3>
                     <div className='coupletIndex'>
                         {
                             (verses || []).map((item) => (
@@ -34,4 +32,4 @@ const Fortune = (props) => {
     );
 }
 
-export default Fortune;
+export default RandomPoem;

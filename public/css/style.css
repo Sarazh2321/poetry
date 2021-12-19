@@ -1,14 +1,23 @@
-@font-face {
-  font-family: "Rezvan";
-  src: url("../fonts/Rezvan.ttf") format("truetype");
+/* @font-face {
+  font-family: "Sahel";
+  src: url("../fonts/Sahel.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+} */
+
+@font-face {
+  font-family: "Sahel";
+  src: url("../fonts/Sahel.eot") format("eot"),
+    url("../fonts/Sahel.woff") format("woff"),
+    url("../fonts/Sahel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Rezvan";
+  font-family: "Sahel";
   font-size: 14px;
   word-spacing: -1px;
   background-color: rgb(120, 226, 245);
@@ -41,7 +50,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .topnav a:hover {
@@ -55,7 +64,7 @@ body {
 }
 
 .topnav img {
-  width: 3%;
+  width: 2.5%;
   float: none;
   position: absolute;
   top: 50%;
@@ -71,8 +80,8 @@ body {
   text-align: center;
   padding: 13px 10px;
   text-decoration: none;
-  font-size: 20px;
-  font-family: "Rezvan";
+  font-size: 16px;
+  font-family: "Sahel";
 }
 
 .bottomnav {
@@ -104,7 +113,7 @@ body {
   justify-content: center;
   color: #061e6e;
   margin: 30px;
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 0 8px 16px 0 #a0a8f3;
   padding: 10px;
   border-radius: 20px;
@@ -128,12 +137,12 @@ body {
   margin: 5px;
   border-radius: 10px;
   font-size: 20px;
-  font-family: "Rezvan";
+  font-family: "Sahel";
 }
 
 .post {
   flex: 25%;
-  font-family: "Rezvan";
+  font-family: "Sahel";
   color: #061e6e;
   text-align: right;
   justify-items: center;
@@ -164,7 +173,7 @@ body {
   justify-content: center;
   color: #061e6e;
   margin: 30px;
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 0 8px 16px 0 #a0a8f3;
   padding: 10px;
   border-radius: 20px;
@@ -185,7 +194,7 @@ body {
   margin: 10px;
   border-radius: 10px;
   font-size: 20px;
-  font-family: "Rezvan";
+  font-family: "Sahel";
 }
 
 .bgfortune {
@@ -231,8 +240,8 @@ body {
 }
 
 .versePosition {
-  flex: 50%;
-  max-width: 50%;
+  flex: 100%;
+  max-width: 100%;
   padding: 0;
 }
 
@@ -243,9 +252,13 @@ body {
   text-align: center;
   margin: 5px;
   border-radius: 10px;
-  border-color: rgb(15, 0, 148);
+  /* border-color: rgb(15, 0, 148);
   border-width: 2px;
-  border-style: solid;
+  border-style: solid; */
+}
+
+.poetcard img {
+  width: 22%;
 }
 
 .poetcard button {
@@ -259,8 +272,8 @@ body {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  font-family: "Rezvan";
-  border-radius: 10px;
+  font-family: "Sahel";
+  border-radius: 0 0 10px 10px;
 }
 
 .poetcard button:hover {
@@ -286,7 +299,7 @@ body {
   justify-content: left;
   color: #061e6e;
   margin: 30px;
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 0 8px 16px 0 #a0a8f3;
   padding: 10px;
   border-radius: 20px;
@@ -344,7 +357,7 @@ body {
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  font-family: "Rezvan";
+  font-family: "Sahel";
   border-radius: 10px;
 }
 

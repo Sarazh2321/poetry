@@ -9,7 +9,7 @@ const TopNav = () => {
             <Link to="/">خانه</Link>
             <Link to="/fortune">فال حافظ</Link>
             <Link to="/poets">گنجینه اشعار</Link>
-            <Link to="#contact">درباره ما</Link>
+            <Link to="/random">شعر تصادفی</Link>
             <button href="#signin" style={{ textAlign: 'left', justifyContent: "right" }}>ورود</button>
         </div>
     );
