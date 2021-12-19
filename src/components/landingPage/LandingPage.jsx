@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const LandingPage = () => {
@@ -14,8 +15,12 @@ const LandingPage = () => {
                     در دیوان حافظ، اندیشه ژرف و عرفان ناب عطار نیشابوری
                     همه و همه همچون مرهمی بر زخم های کوچک و برزگش تسکین داده اند.</p>
                 <div >
-                    <button>گنجینه اشعار</button>
-                    <button>فال حافط</button>
+                    <button>
+                        <Link to="/poets" style={{ color: 'white' }}> گنجینه اشعار</Link>
+                    </button>
+                    <button>
+                        <Link to="/fortune" style={{ color: 'white' }}>فال حافط</Link>
+                    </button>
                 </div>
             </div>
             <img src="/images/hafez_mainpage.jpg" />
