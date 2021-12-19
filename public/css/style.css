@@ -11,7 +11,7 @@ body {
   font-family: "Rezvan";
   font-size: 14px;
   word-spacing: -1px;
-  background-color: rgb(238, 247, 253);
+  background-color: rgb(120, 226, 245);
   background-size: 70px;
   background-image: url("../images/bg_tile2.png");
   background-repeat: inherit;
@@ -120,6 +120,56 @@ body {
   box-shadow: 2px 5px 5px 5px #7573f786;
 }
 
+.info {
+  flex: 10%;
+  background-color: #071e69;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Rezvan";
+}
+
+.post {
+  flex: 25%;
+  font-family: "Rezvan";
+  color: #061e6e;
+  text-align: right;
+  justify-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.poemcard {
+  background-color: white;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  color: #061e6e;
+  /* font-size: 25px; */
+  box-shadow: 0 8px 16px 0 #a0a8f3;
+  /* padding: 10px;
+  margin: 30px; */
+  border-radius: 20px;
+}
+
+.poempart {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #061e6e;
+  margin: 30px;
+  font-size: 25px;
+  box-shadow: 0 8px 16px 0 #a0a8f3;
+  padding: 10px;
+  border-radius: 20px;
+}
+
 .landingpage-part {
   text-align: center;
   justify-content: center;
@@ -147,14 +197,17 @@ body {
 }
 
 .fortunesection {
-  position: absolute;
-  float: right;
-  left: 50%;
+  text-align: center;
+  /* position: fixed; */
+  justify-content: center;
+  justify-items: center;
+  float: left;
+  /* left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   background-color: #102d8f80;
-  width: 50%;
-  margin: 50px;
+  width: 95%;
+  margin: 10px;
   border-radius: 20px;
 }
 
@@ -163,8 +216,10 @@ body {
   background-color: #ffffff;
   padding: 15px;
   text-align: center;
-  font-size: 17px;
+  font-size: 20px;
   margin: 20px;
+  justify-content: center;
+  justify-items: center;
   /* width: 50%; */
   border-radius: 20px;
 }
@@ -291,4 +346,20 @@ body {
   font-size: 18px;
   font-family: "Rezvan";
   border-radius: 10px;
+}
+
+.poemcard {
+  background-color: white;
+  width: 95%;
+  text-justify: kashida;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #061e6e;
+  margin: 30px;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 #a0a8f3;
+  padding: 10px;
+  border-radius: 20px;
 }

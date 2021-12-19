@@ -17,7 +17,7 @@ const Fortune = (props) => {
 
     return (
         <div>
-            <div className="fortunesection">
+            <div className="landingpage">
                 <div className="fortunetext" >
                     <h3>{title}</h3>
                     <div className='coupletIndex'>
@@ -28,8 +28,8 @@ const Fortune = (props) => {
                         }
                     </div>
                 </div>
-
             </div >
+            <br />
         </div >
     );
 }
