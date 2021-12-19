@@ -15,12 +15,11 @@ body {
   background-size: 70px;
   background-image: url("../images/bg_tile2.png");
   background-repeat: inherit;
-  background-blend-mode: multiply;
 }
 
 .back {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.829);
+  background-color: rgba(255, 255, 255, 0);
   width: 100%;
   height: 100%;
 }
@@ -96,16 +95,19 @@ body {
 }
 
 .landingpage {
+  background-color: white;
   width: 95%;
   text-justify: kashida;
   text-align: justify;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: #030d2e;
+  color: #061e6e;
   margin: 30px;
   font-size: 25px;
-  /* border-radius: 20px; */
+  box-shadow: 0 8px 16px 0 #a0a8f3;
+  padding: 10px;
+  border-radius: 20px;
   /* background-color: white; */
   /* box-shadow: 2px 5px 5px 5px #d7b9ff; */
 }
@@ -177,4 +179,116 @@ body {
   flex: 50%;
   max-width: 50%;
   padding: 0;
+}
+
+.poetcard {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 #1233a179;
+  flex: 17%;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+  border-color: rgb(15, 0, 148);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.poetcard button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(15, 0, 148);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Rezvan";
+  border-radius: 10px;
+}
+
+.poetcard button:hover {
+  opacity: 0.7;
+}
+
+.poetsdisplay {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.poetstatus {
+  background-color: white;
+  width: 95%;
+  text-justify: kashida;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  color: #061e6e;
+  margin: 30px;
+  font-size: 25px;
+  box-shadow: 0 8px 16px 0 #a0a8f3;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.poetinfo {
+  float: right;
+  flex: 23%;
+  width: 25%;
+  text-align: center;
+  justify-content: end;
+  border-left: 5px #061e6e;
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
+  border-style: solid;
+  margin: 10px;
+}
+
+.poetdesc {
+  float: right;
+  flex: 75%;
+  width: 75%;
+  text-align: right;
+}
+
+.pisection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pisection1 {
+  flex: 10%;
+  margin: 10px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cat {
+  flex: 23%;
+  margin: 10px;
+}
+
+.cat button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(15, 0, 148);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Rezvan";
+  border-radius: 10px;
 }

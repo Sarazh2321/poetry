@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 
 
 const TopNav = () => {
     return (
         <div className="topnav">
             <img src="/images/poetry.png" />
-            <a href="#home">خانه</a>
-            <a href="#about">فال حافظ</a>
-            <a href="#news">گنجینه اشعار</a>
-            <a href="#contact">درباره ما</a>
+            <Link to="/">خانه</Link>
+            <Link to="/fortune">فال حافظ</Link>
+            <Link to="/poets">گنجینه اشعار</Link>
+            <Link to="#contact">درباره ما</Link>
             <button href="#signin" style={{ textAlign: 'left', justifyContent: "right" }}>ورود</button>
         </div>
     );

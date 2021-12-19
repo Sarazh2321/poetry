@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getPoets } from './../../services/poetService';
+import PoetCard from './PoetCard';
 
 const Poets = (props) => {
 
@@ -16,8 +17,24 @@ const Poets = (props) => {
 
     return (
         <div>
-            <h1>Salam</h1>
-            <Link to="poet/2">Hafez</Link>
+            <div className='landingpage'>
+
+                <h1 style={{ fontSize: 50, textAlign: 'center' }}>صندوقچه شعرا</h1>
+            </div>
+            <div className='poetsdisplay'>
+                {
+                    (poets || []).map((poet) => (
+                        <PoetCard
+                            key={poet.id}
+                            fullname={poet.name}
+                            nickname={poet.nickname}
+                            imageUrl={poet.imageUrl}
+                            poetId={poet.id}
+                        />
+                    ))
+                }
+            </div>
+
         </div>
     );
 }

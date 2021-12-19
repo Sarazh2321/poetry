@@ -11,7 +11,8 @@ const MainLayout = (props) => {
 
         <Fragment>
             <div className='back'>
-                {pathname == "/fortune" ? null : <TopNav />}
+                <TopNav />
+                {/* {pathname == "/fortune" ? null : <TopNav />} */}
                 {props.children}
                 {pathname == "/fortune" ? null : <BottomNav />}
             </div>
