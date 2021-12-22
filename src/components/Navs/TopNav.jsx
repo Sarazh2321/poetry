@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 const TopNav = () => {
     return (
         <div className="topnav">
-            <img src="/images/poetry.png" />
+            <img src="https://s4.uupload.ir/files/poetry_g0fs.png" />
             <Link to="/">خانه</Link>
             <Link to="/fortune">فال حافظ</Link>
             <Link to="/poets">گنجینه اشعار</Link>

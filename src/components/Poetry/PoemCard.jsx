@@ -35,7 +35,7 @@ const PoemCard = ({ title, excerpt, poemId }) => {
                         <div className='coupletIndex'>
                             {
                                 (verses || []).map((item) => (
-                                    <p key={item.id} className='versePosition'>{item.text}</p>
+                                    <p key={item.id} className='versePosition2'>{item.text}</p>
                                 ))
                             }
                         </div>

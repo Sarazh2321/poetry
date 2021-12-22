@@ -9,9 +9,6 @@ const Poet = ({ match }) => {
 
     const [data, setData] = useState({});
     const [poems, setPoems] = useState([]);
-    let poemPart = null;
-    // const [cat, setCat] = useState({});
-    // const [poet, setPoet] = useState({});
 
     useEffect(() => {
         getSinglePoet(poetId)

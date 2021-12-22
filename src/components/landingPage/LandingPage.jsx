@@ -23,7 +23,7 @@ const LandingPage = () => {
                     </button>
                 </div>
             </div>
-            <img src="/images/hafez_mainpage.jpg" />
+            <img src="https://s4.uupload.ir/files/hafez_mainpage_kk4v.jpg" />
 
         </div>
     );

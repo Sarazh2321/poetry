@@ -28,6 +28,9 @@ const Fortune = (props) => {
                         }
                     </div>
                 </div>
+                <div className='landingpage' style={{ backgroundColor: "teal" }}>
+                    <br />
+                </div>
             </div >
             <br />
         </div >
