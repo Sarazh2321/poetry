@@ -382,3 +382,11 @@ body {
   padding: 10px;
   border-radius: 20px;
 }
+
+.mediabtn {
+  background-color: #3816d1;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 15px;
+  font-size: 20px;
+}

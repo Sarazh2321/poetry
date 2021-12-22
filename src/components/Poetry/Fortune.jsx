@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getFortune } from '../../services/fortuneService';
+import Player from '../Player/Player';
 
 const Fortune = (props) => {
 
@@ -12,8 +13,9 @@ const Fortune = (props) => {
     }, [])
 
     const { title, plainText, htmlText, recitations, verses } = fortuneData;
-    // console.log(verses);
+    // const { mp3Url } = (recitations || [])[1];
 
+    console.log(((recitations || [])[1] || {}).mp3Url);
 
     return (
         <div>
@@ -28,7 +30,8 @@ const Fortune = (props) => {
                         }
                     </div>
                 </div>
-                <div className='landingpage' style={{ backgroundColor: "teal" }}>
+                <div className='landingpage' style={{ backgroundColor: "#3816d1" }}>
+                    <Player mp3Url={((recitations || [])[1] || {}).mp3Url} />
                     <br />
                 </div>
             </div >
