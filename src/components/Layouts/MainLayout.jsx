@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import TopNav from './../Navs/TopNav';
-import BottomNav from './../Navs/BottomNav';
 import { withRouter } from 'react-router-dom';
 
 const MainLayout = (props) => {
@@ -12,9 +11,7 @@ const MainLayout = (props) => {
         <Fragment>
             <div className='back'>
                 <TopNav />
-                {/* {pathname == "/fortune" ? null : <TopNav />} */}
                 {props.children}
-                {pathname == "/fortune" ? null : <BottomNav />}
             </div>
         </Fragment>
     );

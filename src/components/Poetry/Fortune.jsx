@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getFortune } from '../../services/fortuneService';
 import Player from '../Player/Player';
 
-const Fortune = (props) => {
+const Fortune = () => {
 
     const [fortuneData, setFortuneData] = useState({});
 
@@ -12,8 +12,7 @@ const Fortune = (props) => {
         }).catch(err => console.log(err));
     }, [])
 
-    const { title, plainText, htmlText, recitations, verses } = fortuneData;
-    // const { mp3Url } = (recitations || [])[1];
+    const { title, recitations, verses } = fortuneData;
 
     console.log(((recitations || [])[1] || {}).mp3Url);
 

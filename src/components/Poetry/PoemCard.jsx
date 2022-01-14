@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { getSinglePoem } from '../../services/poemService';
 
 const PoemCard = ({ title, excerpt, poemId }) => {
@@ -7,17 +7,13 @@ const PoemCard = ({ title, excerpt, poemId }) => {
     const [verses, setVerses] = useState([]);
     const [showPoem, setShowPoem] = useState(false);
 
-    let poemSection = null;
 
     const handleShowPoem = () => {
         getSinglePoem(poemId).then(response => {
-            // console.log(response.data);
             setData(response.data);
             setVerses((data.verses || []));
             setShowPoem(!showPoem);
         }).catch((error) => console.log(error));
-
-
     }
 
     return (
@@ -30,7 +26,7 @@ const PoemCard = ({ title, excerpt, poemId }) => {
                 </button>
             </div>
             {
-                showPoem == true ? (
+                showPoem === true ? (
                     <div className="fortunetext" >
                         <div className='coupletIndex'>
                             {

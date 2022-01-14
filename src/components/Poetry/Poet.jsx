@@ -26,9 +26,7 @@ const Poet = ({ match }) => {
         nickname,
         imageUrl,
         birthYearInLHijri,
-        deathYearInLHijri,
-        birthPlace,
-        deathPlace,
+        deathYearInLHijri
     } = (poet || {});
 
     const { children } = (cat || {});
@@ -36,15 +34,12 @@ const Poet = ({ match }) => {
     const handleCatButton = catId => {
         setPoems([]);
         getCatPoems(catId).then(response => {
-            console.log(response.data.cat.poems);
             setPoems(response.data.cat.poems);
         }).catch((error) => console.log(error));
-
     }
 
     return (
         <div>
-
             <div className="poetstatus">
                 <div className="poetdesc" >
                     <p>شرح حال: {description}</p>

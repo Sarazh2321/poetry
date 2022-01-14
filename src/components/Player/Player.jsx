@@ -13,7 +13,7 @@ const Player = ({ mp3Url }) => {
 
     const handleStart = () => {
         setStart(!start);
-        if (playChar == '▶️') {
+        if (playChar === '▶️') {
             setPlayChar('⏹️');
         }
         else {
